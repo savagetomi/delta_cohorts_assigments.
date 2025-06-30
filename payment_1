@@ -1,0 +1,10 @@
+amount = input("")
+minimum = 100
+currentBal = 5000
+
+if int(currentBal - int(amount)) < minimum :
+    print("Insufficient balance")
+else :
+    print("Transaction successful")
+    currentBal -= int(amount)
+    print(f"Your new balance is {currentBal}")
